@@ -19,15 +19,15 @@ from check import hello_again
 # das infos-Modul aus Package library importieren
 from library import infos
 
-import socket
-
 
 def main():
+    # gebe die Infos für das OS aus
     print("*" * 40)
+    print("System Infos")
     print("Computer Name:", infos.computer_name())  # data
     print("Operating System:", infos.operating_system())
-    print("Machine:", infos.machine())
     print("Processor:", infos.cpu())
+    print("Machine:", infos.machine())
     print("Python Version:", infos.version())  # ('3', '11', '3')  Major Minor Patch
     print(
         "Python Interpreter:", infos.implementation()
@@ -35,8 +35,6 @@ def main():
     print("System und Version:", infos.system())
     print("*" * 40)
 
-
-# Modul diefunktion stammt
 
 # random.randint(3,4)   # Zugriff über random-Namespace
 # check Namespace via Dot-Notation
